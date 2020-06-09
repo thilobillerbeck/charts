@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: data
+    {{- include "strapi.labels" . | nindent 4 }}
   name: data
 spec:
   accessModes:

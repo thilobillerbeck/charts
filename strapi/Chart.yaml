@@ -1,7 +1,11 @@
 apiVersion: v2
 name: strapi
-description: A Helm chart for Kubernetes
+description: Open source Node.js Headless CMS to easily build customisable APIs
+icon: https://strapi.io/assets/strapi-logo.svg
 type: application
+home: https://strapi.io
+sources:
+  - https://github.com/strapi/strapi
 version: 0.1.0
 appVersion: 3.0.1
 dependencies:
