@@ -33,15 +33,20 @@ spec:
           - name: DATABASE_CLIENT
             value: postgres
           - name: DATABASE_HOST
-            value: {{ template "strapi.database.host" . }}
+            value: {{ template "strapi.postgresql.fullname" . }}
           - name: DATABASE_NAME
             value: {{ .Values.postgresql.postgresqlDatabase | quote }}
           - name: DATABASE_PASSWORD
-            value: {{ .Values.postgresql.postgresqlPassword | quote }}
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "strapi.postgresql.fullname" . }}
+                key: postgresql-password
           - name: DATABASE_PORT
             value: {{ .Values.postgresql.service.port | quote }}
           - name: DATABASE_USERNAME
             value: {{ .Values.postgresql.postgresqlUsername | quote }}
+          - name: DATABASE_SSL
+            value: "false"
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"

@@ -66,7 +66,7 @@ postgresql:
   postgresqlDatabase: strapi
   postgresqlPassword: password
   persistence:
-    enabled: false
+    enabled: true
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
