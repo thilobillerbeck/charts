@@ -3,16 +3,16 @@ entries:
   strapi:
   - apiVersion: v2
     appVersion: 3.0.1
-    created: "2020-06-09T01:10:48.686355395+02:00"
+    created: "2020-06-09T18:52:20.736011685+02:00"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
-      version: 8.10.5
+      version: 8.x.x
     description: A Helm chart for Kubernetes
-    digest: e8e4f868f1b0661e238c29775c6f04f62a2c540d893a62906b61c07222b06a38
+    digest: 13c7ee10a3b7e737b14adb1af461b9836bfc117af9693d96abfeca960ddf548f
     name: strapi
     type: application
     urls:
     - https://charts.thilo-billerbeck.com/strapi-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-09T01:10:48.682436017+02:00"
+generated: "2020-06-09T18:52:20.731607169+02:00"
