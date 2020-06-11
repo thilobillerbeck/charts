@@ -3,13 +3,13 @@ entries:
   strapi:
   - apiVersion: v2
     appVersion: 3.0.1
-    created: "2020-06-09T19:55:35.733783433+02:00"
+    created: "2020-06-11T19:35:29.858999747+02:00"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 8.x.x
     description: Open source Node.js Headless CMS to easily build customisable APIs
-    digest: c433bc283ebfbc2fad5312e84489a6b2585bdc234a7ef43c1c5e8d8cbfccb28c
+    digest: 834018249571cc236946b91265d0fba0d065bf3c3dbcb63f9051cb892eb62d0c
     home: https://strapi.io
     icon: https://strapi.io/assets/strapi-logo.svg
     name: strapi
@@ -19,4 +19,4 @@ entries:
     urls:
     - https://charts.thilo-billerbeck.com/strapi-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-09T19:55:35.729481389+02:00"
+generated: "2020-06-11T19:35:29.845440479+02:00"
